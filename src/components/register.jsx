@@ -20,6 +20,7 @@ const Form = () => {
         // Navigate to the next page (replace '/next-page' with the actual URL)
         // history.push('/next-page');
     };
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -69,7 +70,7 @@ const Form = () => {
                         {Error && Email.length <= 0 ? <label id='error'>ENTER THE EMAIL  !</label> : ""}
                     </div>
                     <div className="form-group1">
-                        <input type="tel" id="Mobile" placeholder="Mobile" onChange={(e) => setMobile(e.target.value)} />
+                        <input type="tel" id="Mobile" placeholder="Mobile" pattern="^[0-9]{10}$" maxLength={10} minLength={10} onChange={(e) => setMobile(e.target.value)} />
                         {Error && Mobile.length <= 0 ? <label id='error'>ENTER THE MOBILE  !</label> : ""}
                     </div>
                     <div className="form-group1">
