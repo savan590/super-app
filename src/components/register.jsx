@@ -1,8 +1,10 @@
 import React from 'react';
 import '../styling/register.css'
+// import '../styling/re.css'
 import image from '../images/image1.jpg'
 import super1 from '../images/Super.jpg'
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
     const [Name, setName] = useState("");
@@ -20,33 +22,35 @@ const Form = () => {
         // Navigate to the next page (replace '/next-page' with the actual URL)
         // history.push('/next-page');
     };
+    const navigate = useNavigate();
     
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         // console.log(Name, UserName, Email, Mobile)
         // const formData = {
-        //     Name,
-        //     UserName,
-        //     Email,
-        //     Mobile
-        // };
-        // setName("");
-        // setUserName("");
-        // setEmail("");
-        // setMobile("");
+            //     Name,
+            //     UserName,
+            //     Email,
+            //     Mobile
+            // };
+            // setName("");
+            // setUserName("");
+            // setEmail("");
+            // setMobile("");
 
-        if (Name.length === 0 || UserName.length === 0 || Email.length === 0 || Mobile.length === 0 || check===false) {
-            setError(true);
-        }
-
-        else {
-            setError(false);
+            if (Name.length === 0 || UserName.length === 0 || Email.length === 0 || Mobile.length === 0 || check===false) {
+                setError(true);
+            }
+            
+            else {
+                setError(false);
+                navigate('/Category');
         }
     }
     return (
 
-        <div className='main'>
+        <div className='maincontainer'>
             <img className='leftimage' src={image} alt='' />
             <h1 className='lefttext'>Discover new things on <br></br>Superapp</h1>
             <div className="form-container">
@@ -79,7 +83,7 @@ const Form = () => {
                             {Error && check === false ? <label id='error'>FILL THE CHECKBOX  !</label> : ""}
                         </label>
                     </div>
-                    <button type="submit" onClick={handleSignup} >SIGN UP</button>
+                    <button type="submit" id='signup' onClick={handleSignup} >SIGN UP</button>
                     {/* <div className="form-group"> */}
                     <p className='plaintext'>By clicking on Sign up. you agree to Superapp <span className='greentext'>Terms and<br></br>
                         Conditions of Use</span></p>
