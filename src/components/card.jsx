@@ -68,11 +68,3 @@ const Cards = ({ data, label, setCategories, categories }) => {
 
 export default Cards;
 
-//className={`block ${selected ? 'selected' : ''}`}
-// const isSelected = categories.includes(data.label);
-// useEffect(() => {
-//     setSelected(isSelected);
-// }, [isSelected]);
-// const newCategories = isSelected
-//     ? categories.filter(i => i !== data.label)
-//     : [...categories, data.label];

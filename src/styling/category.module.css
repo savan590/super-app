@@ -40,7 +40,6 @@ body {
     font-size: 55px;
     font-weight: 700;
     /* line-height: 95px; */
-    /* letter-spacing: 0em; */
     text-align: left;
     margin-left: 10px;
     margin-top: 40px;
@@ -72,7 +71,6 @@ body {
 
 #catbtn {
     background: green;
-    /* border-radius: 12px; */
     width: 120px;
     color: white;
     border-radius: 20px;
@@ -117,23 +115,3 @@ body {
 
 }
 
-/* .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px; 
-} */
-
-
-/* #labels{
-    color: white;
-} */
-
-/* .heading{
-    font-family: 'Single Day';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 71px;
-    line-height: 139.69%;
-    color: #72DB73;
-    
-} */

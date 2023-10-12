@@ -6,26 +6,23 @@ import cross from '../images/X.png';
 import { useState,useEffect } from 'react';
 import Cards from './card.jsx';
 import { data } from '../dataset/data';
-
 // import { useNavigate } from 'react-router-dom'
+
 
 const Category = () => {
     const [categories, setCategories] = useState([]);
     const [hasError, setHasError] = useState(false)
 
     useEffect(() => {
-        // Check the length of categories whenever it changes
         if (categories.length < 3) {
           setHasError(true);
         } else {
           setHasError(false);
         }
       }, [categories]);
-    // const navigate = useNavigate()
+    
     const handleSignUp = () => {
-        window.localStorage.setItem("cards", JSON.stringify([...categories]));
-        // navigate("/prebrowse");
-        
+        window.localStorage.setItem("cards", JSON.stringify([...categories])); 
     }
 
     const handleClick = (clickedlabel) => {
@@ -62,9 +59,3 @@ const Category = () => {
 
 export default Category;
 
-/* {dataset.map((dataset, id) => (
-    // <img src={imageSrc} alt='' />
-    <div className="card-grid"></div>
-    <span id='labels'>{dataset.label}</span>
-       <img className='movies' key={id} src={dataset.image} alt='' />
-    </div>))}; */
