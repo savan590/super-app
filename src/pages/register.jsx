@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styling/register.css'
+import './register.css'
 // import '../styling/re.css'
 import image from '../images/image1.jpg'
 import super1 from '../images/Super.jpg'
@@ -26,18 +26,7 @@ const Form = () => {
     
     
     const handleSubmit = (e) => {
-        e.preventDefault();
-        // console.log(Name, UserName, Email, Mobile)
-        // const formData = {
-            //     Name,
-            //     UserName,
-            //     Email,
-            //     Mobile
-            // };
-            // setName("");
-            // setUserName("");
-            // setEmail("");
-            // setMobile("");
+        e.preventDefault()
 
             if (Name.length === 0 || UserName.length === 0 || Email.length === 0 || Mobile.length === 0 || check===false) {
                 setError(true);

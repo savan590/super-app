@@ -1,0 +1,52 @@
+.news {
+    height: 86vh;
+    width: 27vw;
+    /* max-height: 86vh; */
+    position: relative;
+    border-radius: 12px;
+    /* padding: 6px; */
+    /* background: red; */
+    margin-top: 30px;
+  }
+  
+  .image {
+    height: 59vh;
+    border-radius: 12px;
+    width: 27vw;
+  }
+  
+  .content {
+    height: 27vh;
+    border-radius: 12px;
+    width: 26vw;
+    overflow: auto;
+    background: white;
+    font-size: 1.3rem;
+    padding: 6px;
+    margin-top: -4px;
+  }
+  
+  .middletext {
+    position: absolute;
+    width: 27vw;
+    height: 22vh;
+    background: rgba(0, 0, 0, 0.74);
+    top: 37vh;
+    padding: 15px;
+    box-sizing: border-box;
+    /* font-size: 20px; */
+  }
+  
+  .title {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .date,
+  .time {
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+  

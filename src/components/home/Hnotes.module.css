@@ -1,0 +1,38 @@
+.notes {
+    color: white;
+    background: #F1C75B;
+    height: 61vh;
+    width: 30vw;
+    /* position: relative; */
+    border-radius: 12px;
+    /* padding: 6px; */
+    margin-top: 30px;
+}
+
+.title {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    /* text-align: center; */
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+textarea {
+    font-weight: 600;
+    width: 25vw;
+    height: 40vh;
+    padding: 20px;
+    margin-left: 10px;
+    /* position: fixed; */
+    font-size: 20px;
+    overflow: auto;
+    background: #F1C75B;
+    border: none;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none
+}
+

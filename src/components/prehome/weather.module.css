@@ -1,0 +1,73 @@
+.weather{
+    width: 550px;
+    /* min-height: 23vh; */
+    height: 30vh;
+    background: #101744;
+    border-radius: 12px;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+.time_date {
+    height: 7vh;
+    width: 550px;
+    background: #FF4ADE;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.weatherinfo {
+    width: 550px;
+    height: 23vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* .line {
+    margin-top: 10px;
+    height: 60px;
+} */
+
+.temperature {
+    margin-bottom: 35px;
+    font-size: 34px;
+    margin-top: 10px;
+    letter-spacing: 0.15rem;
+}
+
+.windicon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -20px;
+}
+
+.windinfo {
+    margin-bottom: 12px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.hum{
+    margin-bottom: -24px ;
+    margin-right: 10px;
+    width: 20px;
+    height: 30px;
+}
+.mbar{
+    margin-bottom: -24px ;
+    margin-right: 10px;
+    width: 20px;
+    height: 40px;
+}

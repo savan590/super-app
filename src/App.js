@@ -1,20 +1,30 @@
-
-// import './App.css';
-import Register from './components/register';
-import Category from "./components/category";
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import React from 'react'
-
+import Register from './pages/register';
+import Category from './pages/category';
+import Home from './pages/home';
+import List from './pages/list';
+// import Main from './components/mainpage';
+// import P from './components/home/stopwatch';
+// import Profile from './components/home/homeprofile';
 
 function App() {
+  // const navigate = useNavigate();
+
+  // // This useEffect will navigate to the '/Home' route when the app loads.
+  // React.useEffect(() => {
+  //   navigate('/Register');
+  // }, [navigate]);
+
   return (
-    <div className="App">
-        <Routes>
-          <Route path='/Register' element={<Register />} />
-          <Route path='/Category' element={<Category />} />
-        </Routes>
-        {/* <Register/> */}
-    </div>
+    <>
+      <Routes>
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Category" element={<Category />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/Movies" element={<List />} />
+      </Routes>
+    </>
   );
 }
 

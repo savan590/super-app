@@ -7,7 +7,7 @@ import horror from '../images/image 8.png'
 import fantasy from '../images/image 9.png'
 import music from '../images/image 10.png'
 import fiction from '../images/image 11.png'
-import styles from '../styling/category.module.css'
+import styles from '../pages/category.module.css'
 
 export const data = [
     {

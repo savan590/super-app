@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from'../styling/category.module.css';
+import styles from'./category.module.css';
 import super1 from '../images/Super.jpg';
 import error from '../images/error.png';
 import cross from '../images/X.png';
 import { useState,useEffect } from 'react';
-import Cards from './card.jsx';
+import Cards from '../components/category/card.jsx';
 import { data } from '../dataset/data';
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 const Category = () => {
@@ -20,9 +20,11 @@ const Category = () => {
           setHasError(false);
         }
       }, [categories]);
-    
+    const navigate = useNavigate();
+
     const handleSignUp = () => {
         window.localStorage.setItem("cards", JSON.stringify([...categories])); 
+        navigate('/')
     }
 
     const handleClick = (clickedlabel) => {

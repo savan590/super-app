@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.allpart{
+    display: flex;
+}
+.detail-weather{
+    margin-left: 20px;
+    margin-right: 150px;
+}
