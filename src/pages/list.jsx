@@ -6,7 +6,7 @@ const Movies = () => {
     const movies = JSON.parse(window.localStorage.getItem("cards"))
     const navigate = useNavigate();
     const handleClick= () => {
-        navigate('/')
+        navigate('/Home')
     }
     return (
         <>

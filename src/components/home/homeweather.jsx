@@ -13,7 +13,7 @@ const Weather = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://api.weatherapi.com/v1/current.json?key=4f66ceffebce4b87853113145231010&q=junagadh&aqi=no');
+                const response = await fetch('https://api.weatherapi.com/v1/current.json?key=4f66ceffebce4b87853113145231010&q=junagadh&aqi=no');
                 const data = await response.json();
                 setweather(data);
             }

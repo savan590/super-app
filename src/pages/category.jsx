@@ -24,7 +24,7 @@ const Category = () => {
 
     const handleSignUp = () => {
         window.localStorage.setItem("cards", JSON.stringify([...categories])); 
-        navigate('/')
+        navigate('/Home')
     }
 
     const handleClick = (clickedlabel) => {
